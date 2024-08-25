@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1 class="hidden" id="greeting">hello</h1>
+    <div class="body">
+        <div class="main">
+            <h1>Login</h1>
+            <div class="bottom">
+                <form id="form">
+                    <div class="inputBoxs">
+                        <input type="text" required placeholder="Username" class="input" id="username">
+                        <div class="fu_password_box">
+                            <input type="password" required placeholder="Password" class="pwInputBox" id="password" oninput="PwIsEmpty()">
+                            <img src="../Login/img/Visibility Off Icon.svg" id="close_img" class="hidden">
+                            <img src="../Login/img/Visibility icon.svg" class="hidden" id="open_img">
+                        </div>   
+                    </div>
+                    <div class="aboutLogin">
+                        <span>
+                            <input type="checkbox" class="checkBox" id="checkBox">Remember me
+                        </span>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <span>
+                        <p>Don't have a account?<a href="#"> Register</a></p>
+                    </span>
+                </form>
+             </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

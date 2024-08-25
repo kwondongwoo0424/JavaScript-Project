@@ -1,0 +1,172 @@
+body {
+    background-image: url(./img/cloud_bgImg.jpeg);
+    background-size : cover;
+}
+.body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    height: 55vh;
+    width: 65vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 15px 15px rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+.bottom{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 2vw;
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.inputBoxs{
+    display: flex;
+    flex-direction: column;
+    height: 17vh;
+    justify-content: space-between;
+}
+
+.input:focus {outline:none;}
+
+.input{
+    width: 30vw;
+    height: 6vh;
+    background-color: transparent;
+    font-size: 1.3em;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding-left: 6%;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.aboutLogin{
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    height: 7vh;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.checkBox{
+    cursor: pointer;
+}
+
+button {
+    width: 32vw;
+    border: none;
+    height: 6vh;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.fu_password_box{
+    width: 30vw;
+    height: 6vh;
+    background-color: transparent;
+    font-size: 1.3em;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding-left: 6%;
+    color: white;
+    display: flex;
+
+}
+
+.pwInputBox{
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    width: 25vw;
+    color: white;
+}
+
+.pwInputBox:focus {
+    outline:none;
+}
+
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
+    box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        width: 90vw;
+    }
+
+    .input {
+        width: 74vw;
+        height: 6vh;
+        font-size: 1.2em;
+    }
+
+    .fu_password_box {
+        width: 74vw;
+    }
+
+    #password{
+        width: 65vw;
+    }
+
+    img {
+        width: 5vw;
+    }
+
+    .aboutLogin, button {
+        width: 80vw;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
